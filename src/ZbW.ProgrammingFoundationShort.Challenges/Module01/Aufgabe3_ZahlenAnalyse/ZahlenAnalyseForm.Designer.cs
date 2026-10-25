@@ -26,69 +26,106 @@ partial class ZahlenAnalyseForm
     LblKleinste = new Label();
     LblGerade = new Label();
     SuspendLayout();
-
-    // Eingabe-Labels und TextBoxen
+    // 
+    // LblZahl1
+    // 
     LblZahl1.AutoSize = true;
     LblZahl1.Location = new Point(12, 18);
+    LblZahl1.Name = "LblZahl1";
+    LblZahl1.Size = new Size(42, 15);
+    LblZahl1.TabIndex = 0;
     LblZahl1.Text = "Zahl 1:";
-
+    // 
+    // TxtZahl1
+    // 
     TxtZahl1.Location = new Point(80, 15);
     TxtZahl1.Name = "TxtZahl1";
     TxtZahl1.Size = new Size(80, 23);
-
+    TxtZahl1.TabIndex = 1;
+    // 
+    // LblZahl2
+    // 
     LblZahl2.AutoSize = true;
     LblZahl2.Location = new Point(12, 50);
+    LblZahl2.Name = "LblZahl2";
+    LblZahl2.Size = new Size(42, 15);
+    LblZahl2.TabIndex = 2;
     LblZahl2.Text = "Zahl 2:";
-
+    // 
+    // TxtZahl2
+    // 
     TxtZahl2.Location = new Point(80, 47);
     TxtZahl2.Name = "TxtZahl2";
     TxtZahl2.Size = new Size(80, 23);
-
+    TxtZahl2.TabIndex = 3;
+    // 
+    // LblZahl3
+    // 
     LblZahl3.AutoSize = true;
     LblZahl3.Location = new Point(12, 82);
+    LblZahl3.Name = "LblZahl3";
+    LblZahl3.Size = new Size(42, 15);
+    LblZahl3.TabIndex = 4;
     LblZahl3.Text = "Zahl 3:";
-
+    // 
+    // TxtZahl3
+    // 
     TxtZahl3.Location = new Point(80, 79);
     TxtZahl3.Name = "TxtZahl3";
     TxtZahl3.Size = new Size(80, 23);
-
-    // Button
+    TxtZahl3.TabIndex = 5;
+    // 
+    // CmdAnalysieren
+    // 
     CmdAnalysieren.Location = new Point(80, 115);
     CmdAnalysieren.Name = "CmdAnalysieren";
     CmdAnalysieren.Size = new Size(130, 28);
+    CmdAnalysieren.TabIndex = 6;
     CmdAnalysieren.Text = "Analysieren";
     CmdAnalysieren.Click += CmdAnalysieren_Click;
-
-    // Ergebnis-Labels
-    int yStart = 160;
-    int yStep = 24;
-
+    // 
+    // LblSumme
+    // 
     LblSumme.AutoSize = true;
-    LblSumme.Location = new Point(12, yStart);
+    LblSumme.Location = new Point(12, 160);
     LblSumme.Name = "LblSumme";
-    LblSumme.Text = "";
-
+    LblSumme.Size = new Size(0, 15);
+    LblSumme.TabIndex = 7;
+    // 
+    // LblDurchschnitt
+    // 
     LblDurchschnitt.AutoSize = true;
-    LblDurchschnitt.Location = new Point(12, yStart + yStep);
+    LblDurchschnitt.Location = new Point(12, 160);
     LblDurchschnitt.Name = "LblDurchschnitt";
-    LblDurchschnitt.Text = "";
-
+    LblDurchschnitt.Size = new Size(0, 15);
+    LblDurchschnitt.TabIndex = 8;
+    // 
+    // LblGroesste
+    // 
     LblGroesste.AutoSize = true;
-    LblGroesste.Location = new Point(12, yStart + yStep * 2);
+    LblGroesste.Location = new Point(12, 160);
     LblGroesste.Name = "LblGroesste";
-    LblGroesste.Text = "";
-
+    LblGroesste.Size = new Size(0, 15);
+    LblGroesste.TabIndex = 9;
+    // 
+    // LblKleinste
+    // 
     LblKleinste.AutoSize = true;
-    LblKleinste.Location = new Point(12, yStart + yStep * 3);
+    LblKleinste.Location = new Point(12, 160);
     LblKleinste.Name = "LblKleinste";
-    LblKleinste.Text = "";
-
+    LblKleinste.Size = new Size(0, 15);
+    LblKleinste.TabIndex = 10;
+    // 
+    // LblGerade
+    // 
     LblGerade.AutoSize = true;
-    LblGerade.Location = new Point(12, yStart + yStep * 4);
+    LblGerade.Location = new Point(12, 160);
     LblGerade.Name = "LblGerade";
-    LblGerade.Text = "";
-
+    LblGerade.Size = new Size(0, 15);
+    LblGerade.TabIndex = 11;
+    // 
     // ZahlenAnalyseForm
+    // 
     AutoScaleDimensions = new SizeF(7F, 15F);
     AutoScaleMode = AutoScaleMode.Font;
     ClientSize = new Size(320, 330);
@@ -106,6 +143,7 @@ partial class ZahlenAnalyseForm
     Controls.Add(LblGerade);
     Name = "ZahlenAnalyseForm";
     Text = "Zahlen-Analyse – Aufgabe 3";
+    Load += ZahlenAnalyseForm_Load;
     ResumeLayout(false);
     PerformLayout();
   }

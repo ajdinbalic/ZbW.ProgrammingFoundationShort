@@ -72,4 +72,9 @@ public partial class ZahlenAnalyseForm : Form
     LblKleinste.Text = $"Kleinste Zahl: {kleinste}";
     LblGerade.Text = $"Summe ist: {geradeOderUngerade}";
   }
+
+  private void ZahlenAnalyseForm_Load(object sender, EventArgs e)
+  {
+
+  }
 }

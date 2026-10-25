@@ -56,4 +56,9 @@ public partial class WaehrungsrechnerForm : Form
     decimal chf = betrag * ChfPerEur;
     LblErgebnis.Text = $"{betrag:F2} EUR = {chf:F2} CHF";
   }
+
+  private void WaehrungsrechnerForm_Load(object sender, EventArgs e)
+  {
+
+  }
 }
